@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: public
+    dbname: raw_zone
+    schema: public
+    tables:
+      - name: contactTypes_raw

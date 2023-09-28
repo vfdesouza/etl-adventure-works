@@ -1,0 +1,23 @@
+dbt_elt:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: admin
+      dbname: raw_zone
+      schema: stg
+
+    prod:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: admin
+      dbname: raw_zone
+      schema: dim
+
+  target: dev
